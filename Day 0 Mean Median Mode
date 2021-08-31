@@ -1,0 +1,19 @@
+n = int(input())
+x = input().split(' ')
+il = []
+
+for i in x:
+    il.append(int(i))
+    il.sort()
+s = len(il)//2
+mean = sum(il)/len(il)
+
+m1 = il[s]
+m2 = il[s-1]
+
+median = (m1+m2)/2
+mode = max(il, key = il.count)
+
+print(mean)
+print(median)
+print(mode)
